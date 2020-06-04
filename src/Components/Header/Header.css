@@ -1,0 +1,91 @@
+.header-main-container {
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 15% 15% 0 15%;
+}
+.contact {
+  margin-top: 10% !important;
+  font-weight: normal;
+  font-size: calc(10px + 1vmin);
+}
+.contact a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid #34475f;
+}
+
+.contact a:hover {
+  color: #34475f;
+}
+.header-content {
+  max-width: 700px;
+  font-weight: 350;
+}
+
+/*span wave component*/
+
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.intro-line1 {
+  margin-top: 10%;
+}
+
+.intro-line1 .bold {
+  font-weight: 500;
+  margin: 0 10px;
+  font-size: calc(12px + 3vmin);
+}
+
+.header-image {
+  max-width: 400px;
+}
+
+/* On screens that are 992px or less,*/
+@media screen and (max-width: 992px) {
+  .header-main-container {
+    display: block;
+    padding-right: 10%;
+  }
+  .header-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 22%;
+  }
+
+  .header-image {
+    width: 80%;
+  }
+}

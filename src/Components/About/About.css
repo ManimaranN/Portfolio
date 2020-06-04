@@ -1,0 +1,27 @@
+.background-main-container {
+  color: white;
+  padding: 12% 15% 5% 15%;
+}
+
+.background-header {
+  font-size: calc(12px + 2vmin);
+}
+
+.background-content-content {
+  margin-left: 15%;
+  font-size: calc(12px + 1vmin);
+  margin-bottom: 5%;
+  font-weight: lighter;
+}
+
+.background-content-content a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .background-content-content {
+    margin-left: 0px;
+  }
+}
