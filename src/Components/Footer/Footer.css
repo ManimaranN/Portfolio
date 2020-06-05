@@ -1,0 +1,47 @@
+.footer-container {
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.footer-container {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.heart {
+  font-size: calc(9px + 3vmin);
+
+  margin: 0 10px 0 10px;
+}
+.animate-beat {
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0% {
+    font-size: calc(7px + 1vmin);
+  }
+  40% {
+    font-size: calc(9px + 1vmin);
+  }
+  60% {
+    font-size: calc(7px + 1vmin);
+  }
+  80% {
+    font-size: calc(9px + 1vmin);
+  }
+  100% {
+    font-size: calc(7px + 1vmin);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-content {
+    max-width: 250px;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
